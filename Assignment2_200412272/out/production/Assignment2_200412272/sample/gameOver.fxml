@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.Font?>
+<AnchorPane prefHeight="400.0" prefWidth="200.0" style="-fx-background-color: tomato; -fx-border-color: darkred; -fx-border-width: 5px;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.GameOverController">
+    <children>
+        <Button layoutX="24.0" layoutY="200.0" mnemonicParsing="false" onAction="#close" prefHeight="150.0" prefWidth="150.0" style="-fx-background-color: FIREBRICK;" text="CLOSE" textFill="TOMATO" AnchorPane.bottomAnchor="25.0" AnchorPane.rightAnchor="20.0">
+            <font>
+                <Font name="System Bold" size="24.0" />
+            </font>
+        </Button>
+      <Label alignment="CENTER" contentDisplay="CENTER" layoutX="15.0" layoutY="74.0" prefHeight="55.0" prefWidth="165.0" style="-fx-border-color: darkred; -fx-border-width: 3px;" text="GAME OVER" textFill="RED" AnchorPane.leftAnchor="18.0" AnchorPane.rightAnchor="18.0" AnchorPane.topAnchor="25.0">
+         <font>
+            <Font name="System Bold" size="24.0" />
+         </font>
+      </Label>
+      <Button layoutX="25.0" layoutY="108.0" mnemonicParsing="false" onAction="#restart" prefHeight="50.0" prefWidth="150.0" style="-fx-background-color: FIREBRICK;" text="RESTART" textFill="TOMATO" AnchorPane.bottomAnchor="200.0">
+         <font>
+            <Font name="System Bold" size="24.0" />
+         </font>
+      </Button>
+    </children>
+
+</AnchorPane>

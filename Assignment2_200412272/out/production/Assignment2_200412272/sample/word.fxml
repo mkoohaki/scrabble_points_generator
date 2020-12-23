@@ -1,0 +1,466 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="600.0" prefWidth="800.0" style="-fx-background-color: tomato;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.WordController">
+   <children>
+      <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="600.0" style="-fx-background-color: darkred; -fx-border-color: tomato; -fx-border-width: 5px;">
+         <children>
+            <TextField fx:id="word" layoutX="171.0" layoutY="30.0" prefHeight="50.0" prefWidth="200.0" style="-fx-background-color: tomato; -fx-border-color: red; -fx-border-width: 3px; -fx-text-inner-color: white;" AnchorPane.leftAnchor="145.0" AnchorPane.topAnchor="25.0">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </TextField>
+            <Label alignment="CENTER" layoutX="50.0" layoutY="40.0" prefHeight="25.0" prefWidth="100.0" style="-fx-border-color: tomato; -fx-border-image-width: 3px;" text="Enter Word" textFill="TOMATO" AnchorPane.leftAnchor="25.0" AnchorPane.topAnchor="37.5">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <Button alignment="CENTER" contentDisplay="CENTER" layoutX="460.0" layoutY="465.0" mnemonicParsing="false" onAction="#submit" prefHeight="110.0" prefWidth="120.0" style="-fx-background-color: red; -fx-border-width: 3px; -fx-border-color: tomato;" text="SUBMIT" textFill="TOMATO" AnchorPane.bottomAnchor="20.0" AnchorPane.rightAnchor="20.0">
+               <font>
+                  <Font name="System Bold" size="20.0" />
+               </font>
+            </Button>
+            <Button fx:id="submitAlabel" layoutX="170.0" layoutY="120.0" mnemonicParsing="false" onAction="#submitA" prefHeight="50.0" prefWidth="50.0" style="-fx-background-color: orange; -fx-border-radius: 30;" text="A" AnchorPane.leftAnchor="169.0" AnchorPane.topAnchor="115.0">
+               <font>
+                  <Font name="System Bold" size="24.0" />
+               </font>
+            </Button>
+            <Label layoutX="182.0" layoutY="153.0" text="1" AnchorPane.leftAnchor="175.0">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </Label>
+            <Label fx:id="labelA" layoutX="210.0" layoutY="153.0" text="9" AnchorPane.leftAnchor="206.0">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </Label>
+            <Button fx:id="submitBlabel" layoutX="237.0" layoutY="120.0" mnemonicParsing="false" onAction="#submitB" prefHeight="50.0" prefWidth="50.0" style="-fx-background-color: orange;" text="B" AnchorPane.leftAnchor="236.0" AnchorPane.topAnchor="115.0">
+               <font>
+                  <Font name="System Bold" size="24.0" />
+               </font>
+            </Button>
+            <Label layoutX="244.0" layoutY="153.0" text="3" AnchorPane.leftAnchor="243.0">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </Label>
+            <Label fx:id="labelB" layoutX="274.0" layoutY="153.0" text="2" AnchorPane.leftAnchor="274.0">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </Label>
+            <Button fx:id="submitClabel" layoutX="300.0" layoutY="120.0" mnemonicParsing="false" onAction="#submitC" prefHeight="50.0" prefWidth="50.0" style="-fx-background-color: orange; -fx-border-radius: 30;" text="C" AnchorPane.rightAnchor="236.0" AnchorPane.topAnchor="115.0">
+               <font>
+                  <Font name="System Bold" size="24.0" />
+               </font>
+            </Button>
+            <Label layoutX="312.0" layoutY="153.0" text="3" AnchorPane.rightAnchor="273.0">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </Label>
+            <Label fx:id="labelC" layoutX="340.0" layoutY="153.0" text="2" AnchorPane.rightAnchor="243.0">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </Label>
+            <Button fx:id="submitDlabel" layoutX="367.0" layoutY="120.0" mnemonicParsing="false" onAction="#submitD" prefHeight="50.0" prefWidth="50.0" style="-fx-background-color: orange;" text="D" AnchorPane.rightAnchor="169.0" AnchorPane.topAnchor="115.0">
+               <font>
+                  <Font name="System Bold" size="24.0" />
+               </font>
+            </Button>
+            <Label layoutX="374.0" layoutY="153.0" text="2" AnchorPane.rightAnchor="205.0">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </Label>
+            <Label fx:id="labelD" layoutX="404.0" layoutY="153.0" text="4" AnchorPane.rightAnchor="175.0">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </Label>
+            <Button fx:id="submitFlabel" layoutX="174.0" layoutY="189.0" mnemonicParsing="false" onAction="#submitF" prefHeight="50.0" prefWidth="50.0" style="-fx-background-color: orange; -fx-border-radius: 30;" text="F" AnchorPane.leftAnchor="169.0" AnchorPane.topAnchor="184.0">
+               <font>
+                  <Font name="System Bold" size="24.0" />
+               </font>
+            </Button>
+            <Button fx:id="submitGlabel" layoutX="243.0" layoutY="190.0" mnemonicParsing="false" onAction="#submitG" prefHeight="50.0" prefWidth="50.0" style="-fx-background-color: orange;" text="G" AnchorPane.leftAnchor="236.0" AnchorPane.topAnchor="184.0">
+               <font>
+                  <Font name="System Bold" size="24.0" />
+               </font>
+            </Button>
+            <Label layoutX="250.0" layoutY="223.0" text="2" AnchorPane.leftAnchor="243.0" AnchorPane.topAnchor="216.0">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </Label>
+            <Label fx:id="labelG" layoutX="280.0" layoutY="223.0" text="3" AnchorPane.leftAnchor="274.0" AnchorPane.topAnchor="216.0">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </Label>
+            <Button fx:id="submitHlabel" layoutX="306.0" layoutY="190.0" mnemonicParsing="false" onAction="#submitH" prefHeight="50.0" prefWidth="50.0" style="-fx-background-color: orange; -fx-border-radius: 30;" text="H" AnchorPane.rightAnchor="236.0" AnchorPane.topAnchor="184.0">
+               <font>
+                  <Font name="System Bold" size="24.0" />
+               </font>
+            </Button>
+            <Label layoutX="318.0" layoutY="223.0" text="4" AnchorPane.rightAnchor="273.0" AnchorPane.topAnchor="216.0">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </Label>
+            <Label fx:id="labelH" layoutX="346.0" layoutY="223.0" text="2" AnchorPane.rightAnchor="243.0">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </Label>
+            <Button fx:id="submitIlabel" layoutX="373.0" layoutY="190.0" mnemonicParsing="false" onAction="#submitI" prefHeight="50.0" prefWidth="50.0" style="-fx-background-color: orange;" text="I" AnchorPane.rightAnchor="169.0" AnchorPane.topAnchor="184.0">
+               <font>
+                  <Font name="System Bold" size="24.0" />
+               </font>
+            </Button>
+            <Label layoutX="380.0" layoutY="223.0" text="1" AnchorPane.rightAnchor="205.0" AnchorPane.topAnchor="216.0">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </Label>
+            <Label fx:id="labelI" layoutX="410.0" layoutY="223.0" text="8" AnchorPane.rightAnchor="175.0" AnchorPane.topAnchor="216.0">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </Label>
+            <Button fx:id="submitElabel" layoutX="107.0" layoutY="192.0" mnemonicParsing="false" onAction="#submitE" prefHeight="50.0" prefWidth="50.0" style="-fx-background-color: orange; -fx-border-radius: 30;" text="E" AnchorPane.leftAnchor="102.0" AnchorPane.topAnchor="184.0">
+               <font>
+                  <Font name="System Bold" size="24.0" />
+               </font>
+            </Button>
+            <Label layoutX="113.0" layoutY="219.0" text="1" AnchorPane.leftAnchor="109.0" AnchorPane.topAnchor="216.0">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </Label>
+            <Label fx:id="labelE" layoutX="138.0" layoutY="219.0" text="12" AnchorPane.leftAnchor="133.0" AnchorPane.topAnchor="216.0">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </Label>
+            <Label layoutX="181.0" layoutY="218.0" text="4" AnchorPane.leftAnchor="175.0" AnchorPane.topAnchor="216.0">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </Label>
+            <Label fx:id="labelF" layoutX="210.0" layoutY="218.0" text="2" AnchorPane.leftAnchor="206.0" AnchorPane.topAnchor="216.0">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </Label>
+            <Button fx:id="submitJlabel" layoutX="440.0" layoutY="189.0" mnemonicParsing="false" onAction="#submitJ" prefHeight="50.0" prefWidth="50.0" style="-fx-background-color: orange;" text="J" AnchorPane.rightAnchor="102.0" AnchorPane.topAnchor="184.0">
+               <font>
+                  <Font name="System Bold" size="24.0" />
+               </font>
+            </Button>
+            <Label layoutX="447.0" layoutY="222.0" text="8" AnchorPane.rightAnchor="138.0">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </Label>
+            <Label fx:id="labelJ" layoutX="477.0" layoutY="222.0" text="1" AnchorPane.rightAnchor="109.0">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </Label>
+            <Button fx:id="submitLlabel" layoutX="175.0" layoutY="262.0" mnemonicParsing="false" onAction="#submitL" prefHeight="50.0" prefWidth="50.0" style="-fx-background-color: orange; -fx-border-radius: 30;" text="L" AnchorPane.leftAnchor="169.0" AnchorPane.topAnchor="253.0">
+               <font>
+                  <Font name="System Bold" size="24.0" />
+               </font>
+            </Button>
+            <Button fx:id="submitMlabel" layoutX="242.0" layoutY="262.0" mnemonicParsing="false" onAction="#submitM" prefHeight="50.0" prefWidth="50.0" style="-fx-background-color: orange;" text="M" AnchorPane.leftAnchor="236.0" AnchorPane.topAnchor="253.0">
+               <font>
+                  <Font name="System Bold" size="20.0" />
+               </font>
+            </Button>
+            <Label layoutX="249.0" layoutY="295.0" text="3" AnchorPane.topAnchor="285.0">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </Label>
+            <Label fx:id="labelM" layoutX="279.0" layoutY="295.0" text="2" AnchorPane.topAnchor="285.0">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </Label>
+            <Button fx:id="submitNlabel" layoutX="305.0" layoutY="262.0" mnemonicParsing="false" onAction="#submitN" prefHeight="50.0" prefWidth="50.0" style="-fx-background-color: orange; -fx-border-radius: 30;" text="N" AnchorPane.rightAnchor="236.0" AnchorPane.topAnchor="253.0">
+               <font>
+                  <Font name="System Bold" size="24.0" />
+               </font>
+            </Button>
+            <Label layoutX="317.0" layoutY="295.0" text="1" AnchorPane.rightAnchor="274.0" AnchorPane.topAnchor="285.0">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </Label>
+            <Label fx:id="labelN" layoutX="345.0" layoutY="295.0" text="6" AnchorPane.topAnchor="285.0">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </Label>
+            <Button fx:id="submitOlabel" layoutX="372.0" layoutY="262.0" mnemonicParsing="false" onAction="#submitO" prefHeight="50.0" prefWidth="50.0" style="-fx-background-color: orange;" text="O" AnchorPane.rightAnchor="169.0" AnchorPane.topAnchor="253.0">
+               <font>
+                  <Font name="System Bold" size="24.0" />
+               </font>
+            </Button>
+            <Label layoutX="379.0" layoutY="295.0" text="1" AnchorPane.rightAnchor="205.0" AnchorPane.topAnchor="285.0">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </Label>
+            <Label fx:id="labelO" layoutX="409.0" layoutY="295.0" text="8" AnchorPane.rightAnchor="175.0" AnchorPane.topAnchor="285.0">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </Label>
+            <Button fx:id="submitKlabel" layoutX="111.0" layoutY="259.0" mnemonicParsing="false" onAction="#submitK" prefHeight="50.0" prefWidth="50.0" style="-fx-background-color: orange; -fx-border-radius: 30;" text="K" AnchorPane.leftAnchor="102.0" AnchorPane.topAnchor="253.0">
+               <font>
+                  <Font name="System Bold" size="24.0" />
+               </font>
+            </Button>
+            <Label layoutX="179.0" layoutY="293.0" text="1" AnchorPane.leftAnchor="175.0" AnchorPane.topAnchor="285.0">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </Label>
+            <Label fx:id="labelL" layoutX="212.0" layoutY="293.0" text="4" AnchorPane.leftAnchor="205.0" AnchorPane.topAnchor="285.0">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </Label>
+            <Label layoutX="125.0" layoutY="295.0" text="5" AnchorPane.leftAnchor="109.0" AnchorPane.topAnchor="285.0">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </Label>
+            <Label fx:id="labelK" layoutX="148.0" layoutY="295.0" text="1" AnchorPane.leftAnchor="138.0" AnchorPane.topAnchor="285.0">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </Label>
+            <Button fx:id="submitPlabel" layoutX="439.0" layoutY="261.0" mnemonicParsing="false" onAction="#submitP" prefHeight="50.0" prefWidth="50.0" style="-fx-background-color: orange;" text="P" AnchorPane.rightAnchor="102.0" AnchorPane.topAnchor="253.0">
+               <font>
+                  <Font name="System Bold" size="24.0" />
+               </font>
+            </Button>
+            <Label layoutX="446.0" layoutY="294.0" text="3" AnchorPane.rightAnchor="138.0" AnchorPane.topAnchor="285.0">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </Label>
+            <Label fx:id="labelP" layoutX="476.0" layoutY="294.0" text="2" AnchorPane.rightAnchor="109.0" AnchorPane.topAnchor="285.0">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </Label>
+            <Button fx:id="submitRlabel" layoutX="175.0" layoutY="329.0" mnemonicParsing="false" onAction="#submitR" prefHeight="50.0" prefWidth="50.0" style="-fx-background-color: orange; -fx-border-radius: 30;" text="R" AnchorPane.leftAnchor="169.0" AnchorPane.topAnchor="322.0">
+               <font>
+                  <Font name="System Bold" size="24.0" />
+               </font>
+            </Button>
+            <Button fx:id="submitSlabel" layoutX="242.0" layoutY="329.0" mnemonicParsing="false" onAction="#submitS" prefHeight="50.0" prefWidth="50.0" style="-fx-background-color: orange;" text="S" AnchorPane.leftAnchor="236.0" AnchorPane.topAnchor="322.0">
+               <font>
+                  <Font name="System Bold" size="24.0" />
+               </font>
+            </Button>
+            <Label layoutX="249.0" layoutY="362.0" text="1" AnchorPane.leftAnchor="243.0" AnchorPane.topAnchor="354.0">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </Label>
+            <Label fx:id="labelS" layoutX="279.0" layoutY="362.0" text="4" AnchorPane.topAnchor="354.0">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </Label>
+            <Button fx:id="submitTlabel" layoutX="305.0" layoutY="329.0" mnemonicParsing="false" onAction="#submitT" prefHeight="50.0" prefWidth="50.0" style="-fx-background-color: orange; -fx-border-radius: 30;" text="T" AnchorPane.rightAnchor="236.0" AnchorPane.topAnchor="322.0">
+               <font>
+                  <Font name="System Bold" size="24.0" />
+               </font>
+            </Button>
+            <Label layoutX="317.0" layoutY="362.0" text="1" AnchorPane.topAnchor="354.0">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </Label>
+            <Label fx:id="labelT" layoutX="345.0" layoutY="362.0" text="6" AnchorPane.topAnchor="354.0">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </Label>
+            <Button fx:id="submitUlabel" layoutX="372.0" layoutY="329.0" mnemonicParsing="false" onAction="#submitU" prefHeight="50.0" prefWidth="50.0" style="-fx-background-color: orange;" text="U" AnchorPane.rightAnchor="169.0" AnchorPane.topAnchor="322.0">
+               <font>
+                  <Font name="System Bold" size="24.0" />
+               </font>
+            </Button>
+            <Label layoutX="379.0" layoutY="362.0" text="1" AnchorPane.rightAnchor="205.0" AnchorPane.topAnchor="354.0">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </Label>
+            <Label fx:id="labelU" layoutX="409.0" layoutY="362.0" text="4" AnchorPane.rightAnchor="175.0" AnchorPane.topAnchor="354.0">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </Label>
+            <Button fx:id="submitQlabel" layoutX="111.0" layoutY="326.0" mnemonicParsing="false" onAction="#submitQ" prefHeight="50.0" prefWidth="50.0" style="-fx-background-color: orange; -fx-border-radius: 30;" text="Q" AnchorPane.leftAnchor="102.0" AnchorPane.topAnchor="322.0">
+               <font>
+                  <Font name="System Bold" size="24.0" />
+               </font>
+            </Button>
+            <Label layoutX="179.0" layoutY="360.0" text="1" AnchorPane.leftAnchor="175.0" AnchorPane.topAnchor="354.0">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </Label>
+            <Label fx:id="labelR" layoutX="212.0" layoutY="360.0" text="6" AnchorPane.topAnchor="354.0">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </Label>
+            <Label layoutX="125.0" layoutY="362.0" text="10" AnchorPane.leftAnchor="105.0" AnchorPane.topAnchor="354.0">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </Label>
+            <Label fx:id="labelQ" layoutX="148.0" layoutY="362.0" text="1" AnchorPane.leftAnchor="138.0" AnchorPane.topAnchor="354.0">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </Label>
+            <Button fx:id="submitVlabel" layoutX="439.0" layoutY="328.0" mnemonicParsing="false" onAction="#submitV" prefHeight="50.0" prefWidth="50.0" style="-fx-background-color: orange;" text="V" AnchorPane.rightAnchor="102.0" AnchorPane.topAnchor="322.0">
+               <font>
+                  <Font name="System Bold" size="24.0" />
+               </font>
+            </Button>
+            <Label layoutX="446.0" layoutY="361.0" text="4" AnchorPane.rightAnchor="138.0" AnchorPane.topAnchor="354.0">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </Label>
+            <Label fx:id="labelV" layoutX="476.0" layoutY="361.0" text="2" AnchorPane.rightAnchor="109.0" AnchorPane.topAnchor="354.0">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </Label>
+            <Button fx:id="submitWlabel" layoutX="176.0" layoutY="396.0" mnemonicParsing="false" onAction="#submitW" prefHeight="50.0" prefWidth="50.0" style="-fx-background-color: orange; -fx-border-radius: 30;" text="W" AnchorPane.leftAnchor="169.0" AnchorPane.topAnchor="391.0">
+               <font>
+                  <Font name="System Bold" size="20.0" />
+               </font>
+            </Button>
+            <Label layoutX="188.0" layoutY="429.0" text="4" AnchorPane.leftAnchor="175.0">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </Label>
+            <Label fx:id="labelW" layoutX="216.0" layoutY="429.0" text="2" AnchorPane.leftAnchor="206.0">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </Label>
+            <Button fx:id="submitXlabel" layoutX="243.0" layoutY="396.0" mnemonicParsing="false" onAction="#submitX" prefHeight="50.0" prefWidth="50.0" style="-fx-background-color: orange;" text="X" AnchorPane.leftAnchor="236.0" AnchorPane.topAnchor="391.0">
+               <font>
+                  <Font name="System Bold" size="24.0" />
+               </font>
+            </Button>
+            <Label layoutX="250.0" layoutY="429.0" text="8" AnchorPane.leftAnchor="243.0">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </Label>
+            <Label fx:id="labelX" layoutX="280.0" layoutY="429.0" text="1">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </Label>
+            <Button fx:id="submitYlabel" layoutX="306.0" layoutY="396.0" mnemonicParsing="false" onAction="#submitY" prefHeight="50.0" prefWidth="50.0" style="-fx-background-color: orange; -fx-border-radius: 30;" text="Y" AnchorPane.rightAnchor="236.0" AnchorPane.topAnchor="391.0">
+               <font>
+                  <Font name="System Bold" size="24.0" />
+               </font>
+            </Button>
+            <Label layoutX="318.0" layoutY="429.0" text="4">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </Label>
+            <Label fx:id="labelY" layoutX="346.0" layoutY="429.0" text="2">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </Label>
+            <Button fx:id="submitZlabel" layoutX="373.0" layoutY="396.0" mnemonicParsing="false" onAction="#submitZ" prefHeight="50.0" prefWidth="50.0" style="-fx-background-color: orange;" text="Z" AnchorPane.rightAnchor="169.0" AnchorPane.topAnchor="391.0">
+               <font>
+                  <Font name="System Bold" size="24.0" />
+               </font>
+            </Button>
+            <Label layoutX="380.0" layoutY="429.0" text="10" AnchorPane.rightAnchor="201.0">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </Label>
+            <Label fx:id="labelZ" layoutX="410.0" layoutY="429.0" text="1" AnchorPane.rightAnchor="175.0">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </Label>
+            <Button alignment="CENTER" contentDisplay="CENTER" layoutX="20.0" layoutY="465.0" mnemonicParsing="false" onAction="#restart" prefHeight="110.0" prefWidth="120.0" style="-fx-background-color: red; -fx-border-width: 3px; -fx-border-color: tomato;" text="RESTART" textFill="TOMATO" AnchorPane.bottomAnchor="20.0" AnchorPane.leftAnchor="20.0">
+               <font>
+                  <Font name="System Bold" size="20.0" />
+               </font>
+            </Button>
+            <Label alignment="CENTER" layoutX="205.0" layoutY="504.0" prefHeight="25.0" prefWidth="100.0" style="-fx-border-color: tomato; -fx-border-image-width: 3px;" text="Word Score" textFill="TOMATO" AnchorPane.bottomAnchor="62.5" AnchorPane.rightAnchor="300.0">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <Button alignment="CENTER" contentDisplay="CENTER" layoutX="486.0" layoutY="30.0" mnemonicParsing="false" onAction="#clear" prefHeight="50.0" prefWidth="100.0" style="-fx-background-color: red; -fx-border-width: 3px; -fx-border-color: tomato;" text="CLEAR" textFill="TOMATO" AnchorPane.rightAnchor="25.0" AnchorPane.topAnchor="25.0">
+               <font>
+                  <Font name="System Bold" size="20.0" />
+               </font>
+            </Button>
+            <Label fx:id="result" alignment="CENTER" layoutX="252.0" layoutY="558.0" prefHeight="50.0" prefWidth="75.0" style="-fx-background-color: tomato; -fx-border-color: red; -fx-border-width: 3px;" textFill="DARKRED" AnchorPane.bottomAnchor="50.0" AnchorPane.leftAnchor="320.0">
+               <font>
+                  <Font name="System Bold" size="20.0" />
+               </font>
+            </Label>
+            <Button alignment="CENTER" contentDisplay="CENTER" layoutX="363.0" layoutY="30.0" mnemonicParsing="false" onAction="#del" prefHeight="50.0" prefWidth="75.0" style="-fx-background-color: red; -fx-border-width: 3px; -fx-border-color: tomato;" text="DEL" textFill="TOMATO" AnchorPane.rightAnchor="147.5" AnchorPane.topAnchor="25.0">
+               <font>
+                  <Font name="System Bold" size="20.0" />
+               </font>
+            </Button>
+         </children>
+      </AnchorPane>
+      <Label alignment="CENTER" layoutX="649.0" layoutY="395.0" prefHeight="25.0" prefWidth="101.0" style="-fx-border-color: darkred; -fx-border-image-width: 3px;" text="Total Score" textFill="DARKRED" AnchorPane.bottomAnchor="165.0">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label alignment="CENTER" layoutX="640.0" layoutY="27.0" prefHeight="25.0" prefWidth="120.0" style="-fx-border-color: darkred; -fx-border-image-width: 3px;" text="Word History" textFill="DARKRED" AnchorPane.topAnchor="20.0">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <TextArea fx:id="history" layoutX="600.0" layoutY="128.0" prefHeight="200.0" prefWidth="200.0" style="-fx-control-inner-background: darkred; -fx-text-fill: orange; -fx-background-color: darkred; -fx-border-color: red; -fx-border-width: 3px;" AnchorPane.bottomAnchor="225.0" AnchorPane.leftAnchor="625.0" AnchorPane.rightAnchor="25.0" AnchorPane.topAnchor="65.0">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font></TextArea>
+      <Label fx:id="totalResult" alignment="CENTER" layoutX="664.0" layoutY="521.0" style="-fx-background-color: darkred; -fx-border-color: red; -fx-border-width: 3px;" textFill="ORANGE" AnchorPane.bottomAnchor="20.0" AnchorPane.leftAnchor="625.0" AnchorPane.rightAnchor="25.0" AnchorPane.topAnchor="450.0">
+         <font>
+            <Font name="System Bold" size="36.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>
