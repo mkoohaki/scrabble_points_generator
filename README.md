@@ -1,8 +1,8 @@
 # scrabble_points_generator
 
-<image src="https://github.com/mkoohaki/scrabble_points_generator/blob/master/java1.jpg?raw=true" alt="JavaFx application image 1">
+This is a JavaFx applicatoin.
 
-<image src="https://github.com/mkoohaki/scrabble_points_generator/blob/master/java3.jpg?raw=true" alt="JavaFx application image 2">
+<image src="Images/java1" width="30%" height=auto>
+<image src="Images/java2" width="30%" height=auto>
+<image src="Images/java3" width="30%" height=auto>
 
-
-A JavaFx applicatoin
